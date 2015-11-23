@@ -8,8 +8,6 @@ namespace ArchiveSystem.Models
     public class Class
     {
         public int ID { get; set; }
-        public int Course_ID { get; set; }
-        public int Program_ID { get; set; }
         public string AcademicYear { get; set; }
         public string AcademicTerm { get; set; }
         public virtual Course Course { get; set; }

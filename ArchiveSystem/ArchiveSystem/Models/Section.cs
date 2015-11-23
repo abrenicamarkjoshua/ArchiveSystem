@@ -9,8 +9,6 @@ namespace ArchiveSystem.Models
     {
         public int ID { get; set; }
         public string section { get; set; }
-        public int Class_ID { get; set; }
-
         public virtual Class Class { get; set; }
         public virtual ICollection<Group> Group { get; set; }
     }
