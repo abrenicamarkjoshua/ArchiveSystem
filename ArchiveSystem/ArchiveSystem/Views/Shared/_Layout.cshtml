@@ -1,0 +1,76 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/iconust.gif" />
+
+    <script type="text/javascript">
+ function showMenu(){
+   document.getElementById("menu").style.display="block";
+ }
+ function hideMenu(){
+   document.getElementById("menu").style.display="none";
+ }
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container banner">
+            <div class="col-md-12 banner">
+                <img src="~/images/header.png" class="img-responsive bannerimg" width="1170" />
+            </div>
+        </div>
+        <div class="container" style="padding:0px">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Main", "Home")</li>
+                        <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
+                        <li>@Html.ActionLink("Courses", "Course", "Home")</li>
+                        <li>@Html.ActionLink("Archives", "Index", "Document")</li>
+                        <li>@Html.ActionLink("Announcement", "Announcement", "Home")</li>
+
+                    </ul>
+
+                 
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <ul id="menu" style="display:none" onmouseout="hideMenu()">
+                                <li>Menu1</li>
+                                <li>Menu2</li>
+                            </ul>
+
+                        </li>
+                       </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Project Archive</p>
+            </footer>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

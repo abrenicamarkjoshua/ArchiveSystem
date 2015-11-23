@@ -1,0 +1,15 @@
+﻿body {padding-bottom: 20px;color:black;background-color:white}
+.body-content {padding-left: 15px;padding-right: 15px;}
+.navbar{border-radius: 0 !important;-moz-border-radius: 0 !important;background-color:#1038d5;font-size:medium;}
+.nav.navbar-nav li a {color: white;}
+.nav.navbar-nav li a:hover {color: green;font-weight:bold;}
+.items{width:1200px !important;max-height:370px;}
+.banner {padding:0px;}
+.bannerimg{max-height:160px;}
+.linkbutton {text-decoration:underline; font-size:medium}
+.linkbutton a {color:blue;}
+.linkbutton a:hover {color:#0d6bba}
+.margindetail{margin-bottom:5px}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color:#0d6bba;color:aquamarine;}
+
+
