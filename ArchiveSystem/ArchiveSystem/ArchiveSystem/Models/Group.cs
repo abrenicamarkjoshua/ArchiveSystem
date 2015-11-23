@@ -14,7 +14,6 @@ namespace ArchiveSystem.Models
         [StringLength(250)]
         [Display(Name = "Group name")]
         public string GroupName { get; set; }
-        public virtual int Section_ID { get; set; }
         public virtual ICollection<Document> Document { get; set; }
         public virtual Section Section { get; set; }
     }

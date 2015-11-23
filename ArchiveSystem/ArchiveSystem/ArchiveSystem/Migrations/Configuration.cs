@@ -57,14 +57,13 @@ namespace ArchiveSystem.Migrations
                      AcademicTerm = sem1st,
                       Course = courseSE1,
                        Program = programCS,
-                        AcademicYear = academicYear,
-                          Course_ID = courseSE1.ID,
-                           Program_ID = programCS.ID
+                        AcademicYear = academicYear
+                          
                              
                 };
-                var sectionA = new Models.Section { section = "A", Class = ClassCS, Class_ID = ClassCS.ID };
-                var sectionB = new Models.Section { section = "B", Class = ClassCS, Class_ID = ClassCS.ID };
-                var sectionC = new Models.Section { section = "C", Class = ClassCS, Class_ID = ClassCS.ID };
+                var sectionA = new Models.Section { section = "A", Class = ClassCS};
+                var sectionB = new Models.Section { section = "B", Class = ClassCS };
+                var sectionC = new Models.Section { section = "C", Class = ClassCS};
 
                 context.Section.AddOrUpdate(
                    p => p.section,
@@ -104,18 +103,18 @@ namespace ArchiveSystem.Migrations
                     new Models.SoftCat { softCat = "Windows systems" },
                     new Models.SoftCat { softCat = "Utility software" }
                 );
-                var group1 = new Models.Group {Section_ID = sectionA.ID,Section = sectionA,
+                var group1 = new Models.Group {Section = sectionA,
                      GroupName = "group1"
                 };
                 var group2 = new Models.Group
                 {
-                    Section_ID = sectionA.ID,
+                    
                     Section = sectionA,
                     GroupName = "group2"
                 };
                 var group3 = new Models.Group
                 {
-                    Section_ID = sectionA.ID,
+                   
                     Section = sectionA,
                     GroupName = "group3"
                 };

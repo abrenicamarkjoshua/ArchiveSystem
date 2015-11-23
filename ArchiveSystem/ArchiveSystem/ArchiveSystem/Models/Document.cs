@@ -30,7 +30,6 @@ namespace ArchiveSystem.Models
         [Display(Name = "Date Uploaded")]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DateUploaded { get; set; }
-        public int StudentID { get; set; }
 
         [Required(ErrorMessage = "*")]
         [StringLength(10)]
@@ -48,7 +47,6 @@ namespace ArchiveSystem.Models
         public string Remarks { get; set; }
 
         
-        public int SoftCat_ID { get; set; }
         public virtual SoftCat SoftCat { get; set; }
         public virtual Student student { get; set; }
         //public virtual Program Program { get; set; }
