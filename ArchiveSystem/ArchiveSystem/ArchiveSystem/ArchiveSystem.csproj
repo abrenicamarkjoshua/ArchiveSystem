@@ -189,6 +189,14 @@
     <Compile Include="Migrations\201511211055216_third.Designer.cs">
       <DependentUpon>201511211055216_third.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511230910106_updatedForeignKeys.cs" />
+    <Compile Include="Migrations\201511230910106_updatedForeignKeys.Designer.cs">
+      <DependentUpon>201511230910106_updatedForeignKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511230911044_fixedCourseNameLengthLimit.cs" />
+    <Compile Include="Migrations\201511230911044_fixedCourseNameLengthLimit.Designer.cs">
+      <DependentUpon>201511230911044_fixedCourseNameLengthLimit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -301,6 +309,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511211055216_third.resx">
       <DependentUpon>201511211055216_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511230910106_updatedForeignKeys.resx">
+      <DependentUpon>201511230910106_updatedForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511230911044_fixedCourseNameLengthLimit.resx">
+      <DependentUpon>201511230911044_fixedCourseNameLengthLimit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

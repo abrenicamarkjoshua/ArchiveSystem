@@ -9,7 +9,7 @@ namespace ArchiveSystem.Models
     {
         public int ID { get; set; }
         [Required(ErrorMessage="Course name must not be blank")]
-        [StringLength(20)]
+        [StringLength(250)]
         [Display(Name="Course Name")]
         public string CourseName { get; set; }
 
