@@ -37,34 +37,7 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Main", "Home")</li>
-                        <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
-                        <li>@Html.ActionLink("Courses", "Course", "Home")</li>
-                        <li>@Html.ActionLink("Archives", "Index", "Document")</li>
-                        <li>@Html.ActionLink("Announcement", "Announcement", "Home")</li>
-                        <li>@Html.ActionLink("Sign out ", "LogOff", "Account")</li>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            
-                            <li>@Html.ActionLink("Link Text", "Controller", "Action")</li>
-                        }
-                    </ul>
-
-                 
-
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <ul id="menu" style="display:none" onmouseout="hideMenu()">
-                                <li>Menu1</li>
-                                <li>Menu2</li>
-                            </ul>
-
-                        </li>
-                       </ul>
-                </div>
+               
             </div>
         </div>
         <div class="container body-content">
@@ -77,6 +50,6 @@
     </div>
     <script src="~/Scripts/jquery-2.1.4.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-   
+    @RenderSection("scripts")
 </body>
 </html>

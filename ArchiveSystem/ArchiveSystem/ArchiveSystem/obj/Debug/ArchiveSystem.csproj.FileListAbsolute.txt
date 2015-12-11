@@ -147,3 +147,4 @@ C:\Users\Fujitsu\Desktop\ArchiveSystem\ArchiveSystem\ArchiveSystem\ArchiveSystem
 C:\Users\Fujitsu\Desktop\ArchiveSystem\ArchiveSystem\ArchiveSystem\ArchiveSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Fujitsu\Desktop\ArchiveSystem\ArchiveSystem\ArchiveSystem\ArchiveSystem\obj\Debug\ArchiveSystem.Migrations.updatedForeignKeys.resources
 C:\Users\Fujitsu\Desktop\ArchiveSystem\ArchiveSystem\ArchiveSystem\ArchiveSystem\obj\Debug\ArchiveSystem.Migrations.fixedCourseNameLengthLimit.resources
+C:\Users\Fujitsu\Desktop\ArchiveSystem\ArchiveSystem\ArchiveSystem\ArchiveSystem\obj\Debug\ArchiveSystem.csprojResolveAssemblyReference.cache
